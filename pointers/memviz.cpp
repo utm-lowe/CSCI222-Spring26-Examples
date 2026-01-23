@@ -73,7 +73,7 @@ void MemViz::visualize()
 static void displayLoc(unsigned char *ptr, int addrWidth, const std::string &label) 
 {
     std::cout << std::hex << std::setfill('0')
-              << "0x" << std::setw(addrWidth-2) << (void*)ptr
+              << "0x" << std::setw(addrWidth-2) << (unsigned long long)ptr
               << "| 0x"
               << std::setw(2) << (int) *ptr
               << " | " << label << std::endl

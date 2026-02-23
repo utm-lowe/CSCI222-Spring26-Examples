@@ -1,6 +1,7 @@
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 #include <string>
+#include <iostream>
 
 class Employee
 {
@@ -22,4 +23,8 @@ private:
     std::string department;
     int salary;
 };
+
+
+// insertion operator
+std::ostream& operator<<(std::ostream &lhs, Employee &e);
 #endif

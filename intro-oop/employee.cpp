@@ -42,3 +42,15 @@ void Employee::setSalary(int salary)
 {
     this->salary = salary;
 }
+
+// insertion operator
+std::ostream& operator<<(std::ostream &lhs, Employee &e)
+{
+    // side effect
+    lhs << "Name: " << e.getName() << std::endl
+                << "Department: " << e.getDepartment() << std::endl
+                << "Salary: $" << e.getSalary() << std::endl;             
+    
+    // effect
+    return lhs;
+}

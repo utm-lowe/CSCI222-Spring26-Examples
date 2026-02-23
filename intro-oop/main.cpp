@@ -8,7 +8,5 @@ int main()
     Employee e2("Alice", "Engineering", 9000000);  // create an employee with parameters
 
     // print out e2's information
-    std::cout << "Name: " << e2.getName() << std::endl
-                << "Department: " << e2.getDepartment() << std::endl
-                << "Salary: $" << e2.getSalary() << std::endl;             
+    std::cout <<  e2 << std::endl;  
 }

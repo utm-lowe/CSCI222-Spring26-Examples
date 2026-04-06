@@ -111,6 +111,9 @@ bool solve(vector<vector<bool>> & board)
         for(int j=0; j<board[i].size(); j++) {
             // place a queen on the copy
             auto boardCopy = board;
+
+            if(boardCopy[i][j]) continue;
+
             boardCopy[i][j] = true;
 
             if(solve(boardCopy)) {
